@@ -1,0 +1,133 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControleArquivosApp.MainPage"
+             BackgroundColor="{StaticResource Gray950}">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="0">
+            <!-- HEADER -->
+            <Grid Padding="25"
+                BackgroundColor="{StaticResource Gray950}">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <!-- TÍTULO À ESQUERDA -->
+                <Label Text="Controle de Arquivos"
+                       FontSize="50"
+                       FontAttributes="Bold"
+                       FontFamily="Empty"
+                       TextColor="{StaticResource White}"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Start"
+                       Grid.Column="0" 
+                       Margin="100,10,0,10"
+                       />   
+
+                <!-- LOGO À DIREITA -->
+                <Image Source="logodark.png"
+                       HeightRequest="150"
+                       Aspect="AspectFit"
+                       HorizontalOptions="End"
+                       VerticalOptions="Center"
+                       Grid.Column="1"
+                       Margin="0,50,150,0"/>
+            </Grid>
+
+            <Grid ColumnSpacing="15">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Campo 1: Responsável -->
+                <VerticalStackLayout Grid.Column="0">
+                    <Label  Text="Responsável"
+                            TextColor="{StaticResource White}" 
+                            Margin="20,0,0,1"/>
+                    <Entry Text="{Binding Responsavel}"
+                           BackgroundColor="{StaticResource Gray600}"
+                           TextColor="{StaticResource White}"
+                           Placeholder="Digite o responsável" 
+                           Margin="20,0,0,0"
+                           />
+                </VerticalStackLayout>
+
+                <!-- Campo 2: Caminho -->
+                <VerticalStackLayout Grid.Column="1">
+                    <Label Text="Arquivo"
+                           TextColor="{StaticResource White}"
+                           Margin="0,0,0,1"
+                           />
+                    <Picker 
+                            ItemsSource="{Binding TipoArquivo}"
+                            SelectedItem="{Binding OpcaoSelecionadaArquivo}"
+                            TextColor="{StaticResource White}"
+                            BackgroundColor="{StaticResource Gray600}"
+                            Margin="0,0,20,0"
+                            />
+
+                </VerticalStackLayout>
+            </Grid>
+
+            <Grid ColumnSpacing="15">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Campo 1: Fase-->
+                <VerticalStackLayout Grid.Column="0">
+                    <Label Text="Fase"
+                           TextColor="{StaticResource White}"
+                           Margin="20,2,0,1"
+                       />
+                    <Picker 
+                        ItemsSource="{Binding TipoFase}"
+                        SelectedItem="{Binding OpcaoSelecionadaFase}"
+                        TextColor="{StaticResource White}"
+                        BackgroundColor="{StaticResource Gray600}"
+                        Margin="20,1,0,0"
+                        />
+                </VerticalStackLayout>
+                <!-- Campo 2: Discplina-->
+                <VerticalStackLayout Grid.Column="1">
+                    <Label Text="Disciplina"
+                           TextColor="{StaticResource White}"
+                           Margin="0,2,0,0"
+                       />
+                    <Picker 
+                            ItemsSource="{Binding TipoFase}"
+                            SelectedItem="{Binding OpcaoSelecionadaFase}"
+                            TextColor="{StaticResource White}"
+                            BackgroundColor="{StaticResource Gray600}"
+                            Margin="0,1,0,0"
+                            />
+                </VerticalStackLayout>
+
+                <!-- Campo 3: X-->
+                <VerticalStackLayout Grid.Column="2">
+                    <Label  Text="X"
+                            TextColor="{StaticResource White}" 
+                            Margin="0,2,0,0"/>
+                    <Entry Text="{Binding Projeto}"
+                           BackgroundColor="{StaticResource Gray600}"
+                           TextColor="{StaticResource White}"
+                           Placeholder="X" 
+                           Margin="0,1,20,0"
+                           />
+                </VerticalStackLayout>
+
+            </Grid>
+
+            <Button Text="Avançar"
+                    BackgroundColor="{StaticResource Primary}"
+                    TextColor="{StaticResource White}"
+                    CornerRadius="8"
+                    Margin="0,20,0,0"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
