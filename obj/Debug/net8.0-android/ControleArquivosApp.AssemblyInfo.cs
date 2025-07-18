@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ControleArquivosApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+a4e647fff1a293e6b4fe24c2f40dccde24fe1439")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+62663023f56a49fc7fb02bd7a911cca61203c9b5")]
 [assembly: System.Reflection.AssemblyProductAttribute("ControleArquivosApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ControleArquivosApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,1 +1,1 @@
-C:\Users\icaro\OneDrive\Desktop\Trabalho\Programa\ControleArquivosApp\ControleArquivosApp.csproj;x64
+C:\dev\ControleArquivosApp\ControleArquivosApp.csproj;x64
