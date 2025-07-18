@@ -12,37 +12,37 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ControleArquivosApp
-build_property.ProjectDir = C:\Users\icaro\OneDrive\Desktop\Trabalho\Programa\ControleArquivosApp\
+build_property.ProjectDir = C:\dev\ControleArquivosApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/icaro/OneDrive/Desktop/Trabalho/Programa/ControleArquivosApp/App.xaml]
+[C:/dev/ControleArquivosApp/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ControleArquivosApp.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/icaro/OneDrive/Desktop/Trabalho/Programa/ControleArquivosApp/AppShell.xaml]
+[C:/dev/ControleArquivosApp/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ControleArquivosApp.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/icaro/OneDrive/Desktop/Trabalho/Programa/ControleArquivosApp/MainPage.xaml]
+[C:/dev/ControleArquivosApp/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ControleArquivosApp.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/icaro/OneDrive/Desktop/Trabalho/Programa/ControleArquivosApp/Resources/Styles/Colors.xaml]
+[C:/dev/ControleArquivosApp/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ControleArquivosApp.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/icaro/OneDrive/Desktop/Trabalho/Programa/ControleArquivosApp/Resources/Styles/Styles.xaml]
+[C:/dev/ControleArquivosApp/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ControleArquivosApp.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
