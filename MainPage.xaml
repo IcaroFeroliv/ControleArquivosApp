@@ -2,13 +2,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ControleArquivosApp.MainPage"
              NavigationPage.HasNavigationBar="False"
-             BackgroundColor="{StaticResource Gray950}">
+             BackgroundColor="{StaticResource Gray900}">
 
     <ScrollView>
         <VerticalStackLayout Padding="0">
             <!-- HEADER -->
             <Grid Padding="25"
-                BackgroundColor="{StaticResource Gray950}">
+                BackgroundColor="{StaticResource Gray900}">
 
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
@@ -25,7 +25,7 @@
                        HorizontalOptions="Start"
                        Grid.Column="0" 
                        Margin="100,10,0,10"
-                       />   
+                       />
 
                 <!-- LOGO À DIREITA -->
                 <Image Source="logodark.png"
@@ -56,7 +56,7 @@
                            />
                 </VerticalStackLayout>
 
-                <!-- Campo 2: Caminho -->
+                <!-- Campo 2: Arquivo -->
                 <VerticalStackLayout Grid.Column="1">
                     <Label Text="Arquivo"
                            TextColor="{StaticResource White}"
@@ -72,6 +72,12 @@
 
                 </VerticalStackLayout>
             </Grid>
+
+            
+            
+
+            
+            
 
             <Grid ColumnSpacing="15">
                 <Grid.ColumnDefinitions>
@@ -120,7 +126,7 @@
                             Margin="1,5,0,0"/>
 
                     <Entry  Text="{Binding NumeroVersao, Mode=TwoWay}"
-                            Placeholder="01"
+                            Placeholder="00"
                             Keyboard="Numeric"
                             TextColor="White"
                             BackgroundColor="{StaticResource Gray600}"
@@ -135,7 +141,7 @@
                             Margin="1,5,0,0"/>
 
                     <Entry  Text="{Binding NumeroArquivo, Mode=TwoWay}"
-                            Placeholder="01"
+                            Placeholder="00"
                             Keyboard="Numeric"
                             TextColor="White"
                             BackgroundColor="{StaticResource Gray600}"
@@ -152,7 +158,8 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-
+                
+                <!-- Campo 1: Tarefas Buscando do Google Sheets-->
                 <VerticalStackLayout Grid.Column="0">
                     <Label  Text="Tarefa"
                             TextColor="{StaticResource White}"
@@ -160,15 +167,14 @@
                         />
                     <Picker
                             ItemsSource="{Binding Tarefas}"
-                            ItemDisplayBinding="{Binding SiglaTarefa}"
+                            ItemDisplayBinding="{Binding NomeTarefa}"
                             SelectedItem="{Binding OpcaoSelecionadaTarefa}"
                             BackgroundColor="{StaticResource Gray600}"
                             TextColor="White" 
                             Margin="25,1,0,0"/>
-
-
                 </VerticalStackLayout>
-
+                
+                <!-- Campo 2: Descrições Buscando do Google Sheets-->
                 <VerticalStackLayout Grid.Column="1">
                     <Label  Text="Descrição"
                             TextColor="{StaticResource White}"
@@ -176,30 +182,55 @@
                         />
                     <Picker
                             ItemsSource="{Binding Descricoes}"
-                            ItemDisplayBinding="{Binding DescricaoDisciplina}"
+                            ItemDisplayBinding="{Binding NomeDescricao}"
                             SelectedItem="{Binding OpcaoSelecionadaDescricao}"
                             BackgroundColor="{StaticResource Gray600}"
                             TextColor="White" 
                             Margin="0,1,25,0"/>
 
                 </VerticalStackLayout>
-            
-            
-            
-            
-            
-            
             </Grid>
 
 
+            <Grid ColumnSpacing="15">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Campo 1: Busca Arquivo de Origem-->
+                <VerticalStackLayout>
+
+                    <!-- <Label Text="Renomear arquivo"
+               TextColor="{StaticResource White}"
+               Margin="25,5,0,0"/> -->
+
+                    <Button Text="Selecionar Arquivos"
+                            Clicked="OnSelecionarArquivosClicked"
+                            BackgroundColor="{Binding CorBotaoSelecionar}"
+                            TextColor="White"
+                            Margin="100,20,50,5"/>   
+                </VerticalStackLayout>
 
 
+                <VerticalStackLayout Grid.Column="1">
+                    <Button Text="Selecionar Pasta de Destino"
+                            Clicked="OnSelecionarPastaClicked"
+                            BackgroundColor="{Binding CorBotaoSelecionarPasta}"
+                            TextColor="White"
+                            Margin="50,20,100,5"/>
 
-            <Button Text="Avançar"
-                    BackgroundColor="{StaticResource Primary}"
-                    TextColor="{StaticResource White}"
-                    CornerRadius="8"
-                    Margin="0,20,0,0"/>
+                </VerticalStackLayout>
+                    
+             </Grid>
+
+
+                <Button Text="Renomear Arquivos"
+                        Clicked="OnAvancarClicked"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="{StaticResource White}"
+                        CornerRadius="8"
+                        Margin="50,20,50,0"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
