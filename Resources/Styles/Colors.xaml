@@ -25,9 +25,17 @@
     <Color x:Key="Gray300">#ACACAC</Color>
     <Color x:Key="Gray400">#919191</Color>
     <Color x:Key="Gray500">#6E6E6E</Color>
-    <Color x:Key="Gray600">#828282</Color>
+    <Color x:Key="Gray600">#242323</Color>
+    <Color x:Key="Gray700">#242323</Color>
     <Color x:Key="Gray900">#212121</Color>
     <Color x:Key="Gray950">#141414</Color>
+
+    <Color x:Key="TituloDark">#141414</Color>
+    <Color x:Key="TituloWhite">White</Color>
+    <Color x:Key="FundoFinalEscuro">#828282</Color>
+    <Color x:Key="FundoInicioClaro">White</Color>
+    <Color x:Key="FundoMedioClaro">#C8C8C8</Color>
+    <Color x:Key="FundoFinalClaro">#ACACAC</Color>
 
     <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource Primary}"/>
     <SolidColorBrush x:Key="SecondaryBrush" Color="{StaticResource Secondary}"/>
@@ -41,6 +49,7 @@
     <SolidColorBrush x:Key="Gray400Brush" Color="{StaticResource Gray400}"/>
     <SolidColorBrush x:Key="Gray500Brush" Color="{StaticResource Gray500}"/>
     <SolidColorBrush x:Key="Gray600Brush" Color="{StaticResource Gray600}"/>
+    <SolidColorBrush x:Key="Gray700Brush" Color="{StaticResource Gray700}"/>
     <SolidColorBrush x:Key="Gray900Brush" Color="{StaticResource Gray900}"/>
     <SolidColorBrush x:Key="Gray950Brush" Color="{StaticResource Gray950}"/>
 </ResourceDictionary>
